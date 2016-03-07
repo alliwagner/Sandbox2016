@@ -1017,8 +1017,8 @@ dd {
   font-weight: normal; }
   @media (min-width: 46.885em) {
     .type-beta-s {
-      font-size: 0.9375rem;
-      line-height: 1.5rem; } }
+      font-size: 0.8125rem;
+      line-height: 1rem; } }
 
 .type-beta-xs {
   font-family: 'Open Sans', Verdana, Helvetica, Arial, 'Droid Sans', sans-serif;

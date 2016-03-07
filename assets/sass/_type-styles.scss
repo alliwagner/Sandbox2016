@@ -128,8 +128,8 @@ font-family: $alpha-font-family;
   line-height: rem(14);
   font-weight: normal;
   @include media('>large') {
-    font-size: rem(15);
-    line-height: rem(24);
+    font-size: rem(13);
+    line-height: rem(16);
   }
 }
 .type-beta-s {
