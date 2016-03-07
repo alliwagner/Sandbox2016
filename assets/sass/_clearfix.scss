@@ -1,0 +1,8 @@
+// Modern Clearfix
+// This clearfix supports modern browsers and IE8+
+
+.cf:after {
+    content:"";
+    display:table;
+    clear:both;
+}

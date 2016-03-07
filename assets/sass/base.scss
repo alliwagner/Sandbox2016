@@ -1,0 +1,96 @@
+
+$base-color: #333;
+
+$alpha-font-family: #{"'Domaine Display'", "'Bodoni 72'", "'Times New Roman'", Times, "'Droid Serif'", serif};
+$beta-font-family: #{"'Open Sans'", Verdana, Helvetica, Arial, "'Droid Sans'", sans-serif};
+
+
+// Line Height
+// -------------------------------------------
+
+// Access $lh through the lh() function;
+$lh: (
+  mobile: 1.3,
+  desktop: 1.5,
+  super: 27
+);
+
+
+$alpha-text-color: darken( $base-color, 10% );
+$beta-text-color: lighten( $base-color, 10% );
+$alpha-link-color: $base-color;
+$alpha-link-color-hover: darken( $base-color, 10% );
+$alpha-divider-color: darken( $base-color, 20% );
+$alpha-border-color: darken( $base-color, 20% );
+$alpha-button-border: darken( $base-color, 20% );
+$alpha-button-background-color: lighten( $base-color, 70% );
+$alpha-button-text-color: red;
+$alpha-button-border-color-focus: red;
+$alpha-fill-color: red;
+$beta-fill-color: red;
+$beta-link-color: red;
+$beta-link-color-hover: red;
+
+
+
+/*
+*************************************************
+
+Screen Styles
+
+*************************************************
+*/
+
+// HELPERS
+@import 'clearfix';
+@import 'visually-hidden';
+@import 'print';
+
+// LIB (CUSTOM FUNCTIONS)
+@import 'map-func';
+
+// LIBRARIES
+@import 'sassy-maps/sass/sassy-maps';
+@import 'bourbon/dist/bourbon';
+@import 'config-grid'; // grid config needs to be imported between bourbon and neat
+@import 'neat/app/assets/stylesheets/neat';
+@import 'normalize-scss/_normalize.scss';
+
+// MEDIA QUERIES
+// This must come _after_ the Neat include so we can correctly override the `media`
+// mixin defined by Neat. We'd rather use `include-media` as our MQ library
+@import 'include-media/dist/include-media';
+@import 'config-mediaqueries';
+
+@import 'general';
+@import 'show-at';
+@import 'spacing';
+@import 'flex';
+@import 'tools';
+@import 'type-defaults';
+@import 'type-styles';
+@import 'longform';
+@import 'btn';
+@import 'forms';
+
+@import 'header';
+@import 'footer';
+
+// LAYOUT
+@import 'layouts/layouts';
+@import 'layouts/layout-full';
+@import 'layouts/layout-split-sidebar';
+@import 'layouts/layout-split-1-2';
+@import 'layouts/layout-split-2';
+@import 'layouts/layout-split-2--20-80';
+@import 'layouts/layout-split-2--25-75';
+@import 'layouts/layout-split-2--33-66';
+@import 'layouts/layout-split-2-3-6';
+@import 'layouts/layout-split-3';
+@import 'layouts/layout-split-4';
+@import 'layouts/layout-split-8';
+
+
+// Print CSS tests
+$tests: true;
+@import 'mq-test';
