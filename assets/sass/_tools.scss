@@ -39,7 +39,7 @@
 .overflow-y {
   overflow-y: hidden;
 }
-.align-center {
+.text-align-center {
   text-align: center;
 }
 .text-align-left {
@@ -102,7 +102,7 @@
 
 // Borders
 .alpha-border {
-  border: 2px solid $alpha-border-color;
+  border: 1px solid $alpha-border-color;
 }
 
 .alpha-border-border-top {

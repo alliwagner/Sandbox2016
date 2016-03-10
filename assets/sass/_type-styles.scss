@@ -4,7 +4,7 @@
 // -------------------------------------------
 
 @mixin p {
-  font-family: $beta-font-family;
+  font-family: $alpha-font-family;
   font-size: rem(11);
   line-height: rem(15);
 
@@ -29,14 +29,16 @@ dd { @include p; }
 // -------------------------------------------
 
 
+
+
 @mixin type-alpha-xxl() {
   font-family: $alpha-font-family;
   font-size: rem(26);
   line-height: 1;
   font-weight: normal;
   @include media('>large') {
-    font-size: rem(60);
-    line-height: rem(64);
+    font-size: rem(32);
+    line-height: rem(36);
   }
 }
 
@@ -85,16 +87,41 @@ font-family: $alpha-font-family;
   @include type-alpha-m;
 }
 
+.type-alpha-m-thin {
+  @include type-alpha-m;
+  font-weight: 300;
+}
+
 @mixin type-alpha-s() {
   font-family: $alpha-font-family;
   font-size: rem(16);
   line-height: rem(20);
   font-weight: 500;
+  @include media('>large') {
+    font-size: rem(22);
+    line-height: rem(26);
+  }
 }
 
 .type-alpha-s {
   @include type-alpha-s;
 }
+
+@mixin type-alpha-xs() {
+  font-family: $alpha-font-family;
+  font-size: rem(13);
+  line-height: rem(15);
+  font-weight: 500;
+
+}
+
+.type-alpha-xs-bold-uppercase {
+  @include type-alpha-xs;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
 
 @mixin type-beta-l() {
   font-family: $beta-font-family;

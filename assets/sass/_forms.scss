@@ -51,36 +51,31 @@ input[type="datetime-local"] {
   height: rem(33);
   //@include type-sans-xs;
   padding: rem(2) rem(7);
-  border: 1px solid silver;
+  border: 1px solid $alpha-border-color;
   background-color: white;
   transition: box-shadow .15s ease, border .15s ease;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  border-radius: 0;
-  @include media('>medium') {
-      max-width: rem(350);
-  }
+  border-radius: rem(2) 0 0 rem(2);
   &:focus {
     outline: none;
     box-shadow: 0 0 3px 1px #c0e0e7;
   }
 
   &::-webkit-input-placeholder {
-     color: silver;
+     color: $alpha-placeholder-color;
   }
 
   &:-moz-placeholder { /* Firefox 18- */
-     color: silver;
+    color: $alpha-placeholder-color;
   }
 
   &::-moz-placeholder {  /* Firefox 19+ */
-     color: silver;
+    color: $alpha-placeholder-color;
   }
 
   &:-ms-input-placeholder {
-     color: silver;
+    color: $alpha-placeholder-color;
   }
 }
 
@@ -171,13 +166,7 @@ label {
     margin-right: rem(8);
   }
 
-	& + * {
-		margin-top: rem(lh(mobile)/2);
 
-		@include media('>xlarge') {
-			margin-top: rem(lh(desktop)/2);
-		}
-	}
 }
 
 select,

@@ -30,8 +30,8 @@ module.exports = function(grunt) {
                 options: {
                     replace: false
                 },
-                src: 'public/css/screen.css',
-                dest: 'public/css/screen.css'
+                src: 'public/css/base.css',
+                dest: 'public/css/base.css'
             }
         },
 

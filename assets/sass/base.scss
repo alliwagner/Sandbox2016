@@ -1,7 +1,9 @@
 
-$base-color: #333;
+$base-color: #303738;
+$light-gray: #a9a9a9;
+$green: #7ab55c;
 
-$alpha-font-family: #{"'Domaine Display'", "'Bodoni 72'", "'Times New Roman'", Times, "'Droid Serif'", serif};
+$alpha-font-family: #{Helvetica, Arial, "'Droid Sans'", sans-serif};
 $beta-font-family: #{"'Open Sans'", Verdana, Helvetica, Arial, "'Droid Sans'", sans-serif};
 
 
@@ -16,20 +18,21 @@ $lh: (
 );
 
 
-$alpha-text-color: darken( $base-color, 10% );
+$alpha-text-color: $base-color;
 $beta-text-color: lighten( $base-color, 10% );
 $alpha-link-color: $base-color;
 $alpha-link-color-hover: darken( $base-color, 10% );
 $alpha-divider-color: darken( $base-color, 20% );
-$alpha-border-color: darken( $base-color, 20% );
+$alpha-border-color: $light-gray;
 $alpha-button-border: darken( $base-color, 20% );
-$alpha-button-background-color: lighten( $base-color, 70% );
-$alpha-button-text-color: red;
+$alpha-button-background-color: $green;
+$alpha-button-text-color: white;
 $alpha-button-border-color-focus: red;
 $alpha-fill-color: red;
 $beta-fill-color: red;
 $beta-link-color: red;
 $beta-link-color-hover: red;
+$alpha-placeholder-color: $light-gray;
 
 
 
@@ -70,8 +73,10 @@ Screen Styles
 @import 'type-defaults';
 @import 'type-styles';
 @import 'longform';
-@import 'btn';
+@import 'buttons';
 @import 'forms';
+@import 'sandbox';
+
 
 @import 'header';
 @import 'footer';
@@ -83,6 +88,7 @@ Screen Styles
 @import 'layouts/layout-split-1-2';
 @import 'layouts/layout-split-2';
 @import 'layouts/layout-split-2--20-80';
+@import 'layouts/layout-split-2--75-25';
 @import 'layouts/layout-split-2--25-75';
 @import 'layouts/layout-split-2--33-66';
 @import 'layouts/layout-split-3';
