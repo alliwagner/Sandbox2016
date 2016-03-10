@@ -6,21 +6,6 @@ Screen Styles
 
 *************************************************
 */
-.cf:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.visuallyhidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0; }
-
 @media print {
   *,
   *:before,
@@ -725,6 +710,16 @@ video {
 .white-space-nowrap {
   white-space: nowrap; }
 
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
 .alpha-link-color {
   color: #303738; }
   .alpha-link-color:hover, .alpha-link-color:focus {
@@ -1148,6 +1143,20 @@ dd {
   line-height: 14px;
   line-height: 0.875rem; }
 
+button,
+.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+  height: 33px;
+  height: 2.0625rem;
+  color: white;
+  background-color: #7ab55c;
+  min-width: 80px;
+  min-width: 5rem;
+  border: none; }
+
 .longform p {
   font-family: Helvetica, Arial, 'Droid Sans', sans-serif;
   font-size: 11px;
@@ -1284,20 +1293,6 @@ dd {
 @media print {
   .longform ul li {
     list-style-type: disc; } }
-
-button,
-.button,
-input[type="reset"],
-input[type="submit"],
-input[type="button"] {
-  cursor: pointer;
-  height: 33px;
-  height: 2.0625rem;
-  color: white;
-  background-color: #7ab55c;
-  min-width: 80px;
-  min-width: 5rem;
-  border: none; }
 
 input[type="checkbox"],
 input[type="radio"] {

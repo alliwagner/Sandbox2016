@@ -45,17 +45,15 @@ Screen Styles
 */
 
 // HELPERS
-@import 'clearfix';
-@import 'visually-hidden';
-@import 'print';
+@import 'base.print';
 
 // LIB (CUSTOM FUNCTIONS)
-@import 'map-func';
+@import 'config.map-func';
 
 // LIBRARIES
 @import 'sassy-maps/sass/sassy-maps';
 @import 'bourbon/dist/bourbon';
-@import 'config-grid'; // grid config needs to be imported between bourbon and neat
+@import 'config.grid'; // grid config needs to be imported between bourbon and neat
 @import 'neat/app/assets/stylesheets/neat';
 @import 'normalize-scss/_normalize.scss';
 
@@ -63,23 +61,23 @@ Screen Styles
 // This must come _after_ the Neat include so we can correctly override the `media`
 // mixin defined by Neat. We'd rather use `include-media` as our MQ library
 @import 'include-media/dist/include-media';
-@import 'config-mediaqueries';
+@import 'config.mediaqueries';
 
-@import 'general';
-@import 'show-at';
-@import 'spacing';
-@import 'flex';
-@import 'tools';
-@import 'type-defaults';
-@import 'type-styles';
-@import 'longform';
-@import 'buttons';
-@import 'forms';
-@import 'sandbox';
+@import 'base.general';
+@import 'base.show-at';
+@import 'base.spacing';
+@import 'base.flex';
+@import 'base.tools';
+@import 'base.type-defaults';
+@import 'base.type-styles';
+@import 'object.buttons';
+@import 'module.longform';
+@import 'module.forms';
+@import 'module.sandbox';
 
 
-@import 'header';
-@import 'footer';
+@import 'module.header';
+@import 'module.footer';
 
 // LAYOUT
 @import 'layouts/layouts';
@@ -96,9 +94,9 @@ Screen Styles
 @import 'layouts/layout-split-8';
 
 // Styleguide
-@import 'styleguide';
+@import 'config.styleguide';
 
 
 // Print CSS tests
 $tests: true;
-@import 'mq-test';
+@import 'config.mq-test';
